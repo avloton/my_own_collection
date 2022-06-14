@@ -1,0 +1,10 @@
+---
+# tasks file for test_role
+- name: run the new module
+  my_own_module:
+    path: '{{ default_path }}'
+    content: '{{ default_content }}'
+  register: testout
+- name: dump test output
+  debug:
+    msg: '{{ testout }}'

@@ -1,0 +1,4 @@
+---
+# defaults file for test_role
+default_path: '/tmp/test'
+default_content: '123'
